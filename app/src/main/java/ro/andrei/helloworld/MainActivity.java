@@ -1,18 +1,21 @@
 package ro.andrei.helloworld;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.MotionEvent;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import ro.andrei.helloworld.adapters.UserListAdapter;
+import ro.andrei.helloworld.models.UserModel;
 
 public class MainActivity extends AppCompatActivity {
+    RecyclerView mUsersList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,26 +24,29 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Salutare!!", Toast.LENGTH_LONG).show();
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-            }
-        });
-
-        Button button = findViewById(R.id.the_button);
-        button.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                if(motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    Toast.makeText(MainActivity.this,"View touch", Toast.LENGTH_LONG ).show();
-                }
-                return false;
-            }
-        });
+//        mUsersList = findViewById(R.id.users_recycler_view);
+//        RecyclerView.LayoutManager userListLayoutManager = new LinearLayoutManager(this);
+//        mUsersList.setLayoutManager(userListLayoutManager);
+//
+//        List<UserModel> userList = new ArrayList<>();
+//        userList.add(new UserModel("Andrei", "Marinescu"));
+//        userList.add(new UserModel("Gica", "Popescu"));
+//        userList.add(new UserModel("John", "Snow"));
+//        userList.add(new UserModel("Harry", "Potter"));
+//        userList.add(new UserModel("George", "Martin"));
+//        userList.add(new UserModel("Andrei", "Marinescu"));
+//        userList.add(new UserModel("Gica", "Popescu"));
+//        userList.add(new UserModel("John", "Snow"));
+//        userList.add(new UserModel("Harry", "Potter"));
+//        userList.add(new UserModel("George", "Martin"));
+//        userList.add(new UserModel("Andrei", "Marinescu"));
+//        userList.add(new UserModel("Gica", "Popescu"));
+//        userList.add(new UserModel("John", "Snow"));
+//        userList.add(new UserModel("Harry", "Potter"));
+//        userList.add(new UserModel("George", "Martin"));
+//
+//        UserListAdapter listAdapter = new UserListAdapter(userList);
+//        mUsersList.setAdapter(listAdapter);
     }
 
     @Override
