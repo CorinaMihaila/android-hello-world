@@ -10,8 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:name=".activities.Course5Act1B"
+            android:label="@string/title_activity_course5_act1_b"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activities.Course5Act1A"
+            android:label="@string/title_activity_course5_act1"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +23,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.Course5Challange1B"
+            android:label="@string/title_activity_course5_challange1_b"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Course5Challenge1A"
+            android:label="@string/title_activity_course5_challenge1"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
