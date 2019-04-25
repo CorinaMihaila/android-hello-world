@@ -28,4 +28,6 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="title_activity_test_tabbed">TestTabbedActivity</string>
     <string name="title_activity_hello_fragments">HelloFragmentsActivity</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
 </resources>

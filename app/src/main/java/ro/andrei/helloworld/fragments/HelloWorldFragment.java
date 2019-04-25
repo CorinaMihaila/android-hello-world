@@ -28,9 +28,12 @@ public class HelloWorldFragment extends Fragment {
     public void onStart() {
         super.onStart();
         Bundle fragmentData = getArguments();
-        Log.d(
-                "HelloWorld",
-                fragmentData.getString("foo")
-        );
+        if(fragmentData != null) {
+            Log.d(
+                    "HelloWorld",
+                    fragmentData.getString("foo")
+            );
+        }
+
     }
 }
