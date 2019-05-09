@@ -30,4 +30,6 @@
     <string name="title_activity_hello_fragments">HelloFragmentsActivity</string>
     <string name="title_activity_drawer">DrawerActivity</string>
     <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="title_activity_card_view_test">CardViewTest</string>
+    <string name="title_activity_card_view">CardViewActivity</string>
 </resources>
